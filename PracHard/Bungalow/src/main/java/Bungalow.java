@@ -10,7 +10,7 @@ public class Bungalow {
         setGrundpreis(grundpreis);
     }
 
-    public Bungalow(String zeile) throws ResortException{
+    public Bungalow(String zeile) throws ResortException {
         String daten[];
         if (zeile == null){
             throw new ResortException("Ungültige Datenzeile.");

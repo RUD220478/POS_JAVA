@@ -4,12 +4,11 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 public class Resort {
     private String name;
-    private List<Bungalow> bungalows;
+    private ArrayList<Bungalow> bungalows;
 
     public Resort(String name) {
         setName(name);
@@ -58,15 +57,15 @@ public class Resort {
     }
 
     public void save(){
-
+        // nicht gebraucht für PLF
     }
 
     public void load(){
-
+        // nicht gebraucht für PLF
     }
 
     public void exportBungalows(String filename){
-
+        // nicht gebraucht für PLF
     }
 
     public List<Bungalow> importBungalows(String filename) throws ResortException {

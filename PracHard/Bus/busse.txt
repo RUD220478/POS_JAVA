@@ -1,0 +1,3 @@
+L;Alex;100
+R;Susi;110;Y
+R;Werner;90;N

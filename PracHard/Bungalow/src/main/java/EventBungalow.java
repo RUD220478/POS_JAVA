@@ -1,4 +1,4 @@
-public class EventBungalow extends Bungalow {
+public class EventBungalow extends Bungalow implements KostenProPerson {
 
     private int personen;
     private char ausstattung;
@@ -46,5 +46,13 @@ public class EventBungalow extends Bungalow {
         sb.append(", ausstattung=").append(ausstattung);
         sb.append('}');
         return super.toString() + " " + sb.toString();
+    }
+
+    @Override
+    public int getKostenPerson() throws ResortException {
+        if (personen <= 0) {
+            throw new ResortException("Personenanzahl ungültig!");
+        }
+        return (int) getGrundpreis() / personen;
     }
 }
